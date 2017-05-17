@@ -1,7 +1,7 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Copyer:
 " 	Jaocb Zhang
-" 	baibo@gmail.com
+" 	gg.baibo@gmail.com
 "
 " Maintainer: 
 "       Amir Salihefendic
@@ -209,14 +209,11 @@ if $COLORTERM == 'gnome-terminal'
 endif
 
 try
-    colorscheme desert
+    colorscheme violet
 catch
 endtry
 
 set background=dark
-
-hi CursorLine     guibg=#222222 gui=none
-hi LineNr         ctermfg=DarkMagenta guifg=#2b506e guibg=#000000
 
 " Set extra options when running in GUI mode
 if has("gui_running")
@@ -491,3 +488,10 @@ endfunction
 "endif
 
 autocmd FileType java setlocal omnifunc=javacomplete#Complete
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Dirctionary, use NERDTree
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+autocmd vimenter * NERDTree
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif

@@ -6,7 +6,7 @@ for file in `ls -Ald .* | awk '{print $9}'`; do
         continue
     fi
     echo $file
-    ln -s `pwd`'/'$file $HOME'/test'
+    ln -s `pwd`'/'$file $HOME
 done;
 
 echo 'finished'
