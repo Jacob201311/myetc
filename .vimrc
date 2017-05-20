@@ -76,6 +76,8 @@ Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 Plugin 'ascenator/L9', {'name': 'newL9'}
 " Direction
 Plugin 'git@github.com:scrooloose/nerdtree.git'
+" Comment
+Plugin 'git@github.com:scrooloose/nerdcommenter.git'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
