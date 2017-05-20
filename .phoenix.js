@@ -1,5 +1,5 @@
 //----------------
-// prefrence
+// preference
 // ---------------
 Phoenix.set({
       daemon: false,
