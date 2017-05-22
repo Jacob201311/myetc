@@ -61,8 +61,6 @@ Plugin 'VundleVim/Vundle.vim'
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
-Plugin 'tpope/vim-fugitive'
-" plugin from http://vim-scripts.org/vim/scripts.html
 "Plugin 'L9'
 " Git plugin not hosted on GitHub
 "Plugin 'git://git.wincent.com/command-t.git'
@@ -78,7 +76,14 @@ Plugin 'ascenator/L9', {'name': 'newL9'}
 Plugin 'git@github.com:scrooloose/nerdtree.git'
 " Comment
 Plugin 'git@github.com:scrooloose/nerdcommenter.git'
-
+" Markdown
+Plugin 'git@github.com:plasticboy/vim-markdown.git'
+" Git
+Plugin 'git@github.com:tpope/vim-fugitive.git'
+Plugin 'git@github.com:airblade/vim-gitgutter.git'
+Plugin 'git@github.com:mattn/gist-vim.git'
+" undo
+Plugin 'git@github.com:mbbill/undotree.git'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required

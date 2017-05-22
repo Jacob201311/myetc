@@ -56,6 +56,17 @@ var getMouseContext = function(appName) {
 
 
 //----------------
+// mouse focus
+// ---------------
+Key.on('space', KEY_ALT_SHIFT, function() { mvMouseToCenter() });
+
+var mvMouseToCenter = function() {
+    var frame = App.focused().mainWindow().frame();
+    var mvPoint = {x: frame.x + frame.width/2, y: frame.y + frame.height/2};
+    Mouse.move(mvPoint);
+}
+
+//----------------
 // screen switch
 // ---------------
 
