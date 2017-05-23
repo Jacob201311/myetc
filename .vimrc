@@ -77,7 +77,9 @@ Plugin 'git@github.com:scrooloose/nerdtree.git'
 " Comment
 Plugin 'git@github.com:scrooloose/nerdcommenter.git'
 " Markdown
+Plugin 'git@github.com:godlygeek/tabular.git'
 Plugin 'git@github.com:plasticboy/vim-markdown.git'
+Plugin 'git@github.com:isnowfy/python-vim-instant-markdown.git'
 " Git
 Plugin 'git@github.com:tpope/vim-fugitive.git'
 Plugin 'git@github.com:airblade/vim-gitgutter.git'
