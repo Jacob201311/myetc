@@ -86,6 +86,9 @@ Plugin 'git@github.com:airblade/vim-gitgutter.git'
 Plugin 'git@github.com:mattn/gist-vim.git'
 " undo
 Plugin 'git@github.com:mbbill/undotree.git'
+" window switch
+Plugin 'git@github.com:t9md/vim-choosewin.git'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -310,6 +313,10 @@ map <leader>to :tabonly<cr>
 map <leader>tc :tabclose<cr>
 map <leader>tm :tabmove 
 map <leader>t<leader> :tabnext 
+
+" window switch
+let g:choosewin_overlay_enable = 1
+nmap  -  <Plug>(choosewin)
 
 " Let 'tl' toggle between this and the last accessed tab
 let g:lasttab = 1
