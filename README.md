@@ -16,7 +16,7 @@ misc config repo
     + 文件目录NERDTree
     + markdown相关插件
     + git相关插件
-    + vim window切换插件，摆脱<C-w>
+    + vim window切换插件，摆脱<kbd>C-w</kbd>
         + https://github.com/t9md/vim-choosewin
 + colorschema
     + violet(柔和不伤眼(^^)https://github.com/ashfinal/vim-colors-violet)
