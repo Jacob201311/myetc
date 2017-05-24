@@ -88,6 +88,8 @@ Plugin 'git@github.com:mattn/gist-vim.git'
 Plugin 'git@github.com:mbbill/undotree.git'
 " window switch
 Plugin 'git@github.com:t9md/vim-choosewin.git'
+" search
+Plugin 'git@github.com:wincent/command-t.git'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required

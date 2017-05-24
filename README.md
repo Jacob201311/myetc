@@ -18,6 +18,8 @@ misc config repo
     + git相关插件
     + vim window切换插件，摆脱<kbd>C-w</kbd>
         + https://github.com/t9md/vim-choosewin
+    + 文件搜索, tag搜索
+        + https://github.com/wincent/Command-T 需要按照安装教程进行相应安装
 + colorschema
     + violet(柔和不伤眼(^^)https://github.com/ashfinal/vim-colors-violet)
 
