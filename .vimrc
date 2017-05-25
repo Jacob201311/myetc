@@ -333,6 +333,13 @@ map <leader>te :tabedit <c-r>=expand("%:p:h")<cr>/
 " Switch CWD to the directory of the open buffer
 map <leader>cd :cd %:p:h<cr>:pwd<cr>
 
+" auto-complete
+imap <silent> <c-,> call Autocp()
+function Autocp()
+    <c-p>
+    <c-n>
+endfunction
+
 " Specify the behavior when switching between buffers 
 try
   set switchbuf=useopen,usetab,newtab

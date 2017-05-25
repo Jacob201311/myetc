@@ -60,6 +60,7 @@ var getMouseContext = function(appName) {
 // mouse focus
 // ---------------
 Key.on('space', KEY_ALT_SHIFT, function() { mvMouseToCenter() });
+Key.on('z', KEY_ALT_SHIFT, function() { showUp() });
 
 var mvMouseToCenter = function() {
     var frame = App.focused().mainWindow().frame();
@@ -67,6 +68,13 @@ var mvMouseToCenter = function() {
     Mouse.move(mvPoint);
 }
 
+var iconModal =Modal.build({appearance: 'transparent', text: '', weight: 0, duration: 1})
+var showUp = function() {
+    var point = Mouse.location();
+    iconModal.origin = {x: point.x - iconModal.frame().width / 2 + 5, y: Screen.main().frame().height - point.y - iconModal.frame().width / 2 + 7}; // point fix use x + 5, y + 7
+    iconModal.icon = App.focused().icon();
+    iconModal.show();
+}
 //----------------
 // screen switch
 // ---------------

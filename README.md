@@ -35,4 +35,5 @@ misc config repo
     + Chrome: <kbd>Alt</kbd><kbd>Shift</kbd><kbd>C</kbd>
 + Mouse移动
     + 移动到当前窗口中心: <kbd>Alt</kbd><kbd>Shift</kbd><kbd>Space</kbd>
+    + 提醒鼠标位置(使用当前app的icon在鼠标位置提醒): <kbd>Alt</kbd><kbd>Shift</kbd><kbd>Z</kbd>
 
