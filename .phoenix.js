@@ -24,6 +24,7 @@ Key.on('e', KEY_ALT_SHIFT, function() { openApp('Eclipse') });
 Key.on('y', KEY_ALT_SHIFT, function() { openApp('yEd') });
 Key.on('t', KEY_ALT_SHIFT, function() { openApp('iTerm') });
 Key.on('k', KEY_ALT_SHIFT, function() { openApp('kindle') });
+Key.on('1', KEY_ALT_SHIFT, function() { openApp('CCtalk') });
 
 var openApp = function(appName) {
     // 先保存上下文
