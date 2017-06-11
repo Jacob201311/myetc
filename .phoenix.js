@@ -15,6 +15,7 @@ var KEY_ALT_SHIFT = ['alt', 'shift']
 var APP_ALIAS_DICT = { // App.name()获得的是显示名，这边做个映射
     '微信': 'Wechat',
     'iTerm2': 'iTerm',
+    '邮件': 'Mail',
 }
 
 Key.on('q', KEY_ALT_SHIFT, function() { openApp('QQ') });
@@ -24,7 +25,9 @@ Key.on('e', KEY_ALT_SHIFT, function() { openApp('Eclipse') });
 Key.on('y', KEY_ALT_SHIFT, function() { openApp('yEd') });
 Key.on('t', KEY_ALT_SHIFT, function() { openApp('iTerm') });
 Key.on('k', KEY_ALT_SHIFT, function() { openApp('kindle') });
-Key.on('1', KEY_ALT_SHIFT, function() { openApp('CCtalk') });
+Key.on('m', KEY_ALT_SHIFT, function() { openApp('Mail') });
+Key.on('1', KEY_ALT_SHIFT, function() { openApp('IntelliJ IDEA') });
+Key.on('2', KEY_ALT_SHIFT, function() { openApp('CCtalk') });
 
 var openApp = function(appName) {
     // 先保存上下文
@@ -56,6 +59,15 @@ var getMouseContext = function(appName) {
     return point;
 }
 
+
+//----------------
+// window control
+// ---------------
+Key.on('tab', KEY_ALT_SHIFT, function() {  });
+
+var maxWinSize = function() {
+
+}
 
 //----------------
 // mouse focus
