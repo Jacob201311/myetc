@@ -86,6 +86,13 @@ Plugin 'git@github.com:airblade/vim-gitgutter.git'
 Plugin 'git@github.com:mattn/gist-vim.git'
 " undo
 Plugin 'git@github.com:mbbill/undotree.git'
+" window switch
+Plugin 'git@github.com:t9md/vim-choosewin.git'
+" search
+Plugin 'git@github.com:wincent/command-t.git'
+" refer 
+Plugin 'git@github.com:brookhong/cscope.vim.git'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -311,6 +318,10 @@ map <leader>tc :tabclose<cr>
 map <leader>tm :tabmove 
 map <leader>t<leader> :tabnext 
 
+" window switch
+let g:choosewin_overlay_enable = 1
+nmap  -  <Plug>(choosewin)
+
 " Let 'tl' toggle between this and the last accessed tab
 let g:lasttab = 1
 nmap <Leader>tl :exe "tabn ".g:lasttab<CR>
@@ -323,6 +334,13 @@ map <leader>te :tabedit <c-r>=expand("%:p:h")<cr>/
 
 " Switch CWD to the directory of the open buffer
 map <leader>cd :cd %:p:h<cr>:pwd<cr>
+
+" auto-complete
+imap <silent> <c-,> call Autocp()
+function Autocp()
+    <c-p>
+    <c-n>
+endfunction
 
 " Specify the behavior when switching between buffers 
 try
@@ -373,6 +391,9 @@ endfunc
 autocmd BufWrite *.py :call DeleteTrailingWS()
 autocmd BufWrite *.coffee :call DeleteTrailingWS()
 
+" ctags
+map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
+map <A-]> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Ag searching and cope displaying

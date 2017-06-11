@@ -16,6 +16,10 @@ misc config repo
     + 文件目录NERDTree
     + markdown相关插件
     + git相关插件
+    + vim window切换插件，摆脱<kbd>C-w</kbd>
+        + https://github.com/t9md/vim-choosewin
+    + 文件搜索, tag搜索
+        + https://github.com/wincent/Command-T 需要按照安装教程进行相应安装
 + colorschema
     + violet(柔和不伤眼(^^)https://github.com/ashfinal/vim-colors-violet)
 
@@ -31,4 +35,5 @@ misc config repo
     + Chrome: <kbd>Alt</kbd><kbd>Shift</kbd><kbd>C</kbd>
 + Mouse移动
     + 移动到当前窗口中心: <kbd>Alt</kbd><kbd>Shift</kbd><kbd>Space</kbd>
+    + 提醒鼠标位置(使用当前app的icon在鼠标位置提醒): <kbd>Alt</kbd><kbd>Shift</kbd><kbd>Z</kbd>
 
