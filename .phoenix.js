@@ -64,10 +64,16 @@ var getMouseContext = function(appName) {
 //----------------
 // window control
 // ---------------
-Key.on('tab', KEY_ALT_SHIFT, function() {  });
+Key.on('tab', KEY_ALT_SHIFT, function() {  fullScreenApp() });
 
-var maxWinSize = function() {
-
+var fullScreenApp = function() {
+    var currentApp = App.focused();
+    var win = currentApp.mainWindow();
+    if (!win.isFullScreen()) {
+        win.setFullScreen(true);
+    } else {
+        Phoenix.notify(currentApp.name() + " is already full screen");
+    }
 }
 
 //----------------
