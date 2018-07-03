@@ -92,6 +92,8 @@ Plugin 'git@github.com:t9md/vim-choosewin.git'
 Plugin 'git@github.com:wincent/command-t.git'
 " refer 
 Plugin 'git@github.com:brookhong/cscope.vim.git'
+" game
+Plugin 'git@github.com:johngrib/vim-game-code-break.git'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -393,7 +395,6 @@ autocmd BufWrite *.coffee :call DeleteTrailingWS()
 
 " ctags
 map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
-map <A-]> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Ag searching and cope displaying
