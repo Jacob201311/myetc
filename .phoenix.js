@@ -16,20 +16,23 @@ var APP_ALIAS_DICT = { // App.name()获得的是显示名，这边做个映射
     '微信': 'Wechat',
     'iTerm2': 'iTerm',
     '邮件': 'Mail',
+    'QQ音乐': 'QQMusic',
 }
 
 Key.on('q', KEY_ALT_SHIFT, function() { openApp('QQ') });
 Key.on('w', KEY_ALT_SHIFT, function() { openApp('Wechat') });
 Key.on('c', KEY_ALT_SHIFT, function() { openApp('Google Chrome') });
-Key.on('e', KEY_ALT_SHIFT, function() { openApp('Eclipse') });
+Key.on('e', KEY_ALT_SHIFT, function() { openApp('Commander One') });
 Key.on('y', KEY_ALT_SHIFT, function() { openApp('yEd') });
 Key.on('t', KEY_ALT_SHIFT, function() { openApp('iTerm') });
-Key.on('k', KEY_ALT_SHIFT, function() { openApp('kindle') });
+Key.on('k', KEY_ALT_SHIFT, function() { openApp('Kindle') });
 Key.on('m', KEY_ALT_SHIFT, function() { openApp('Mail') });
 Key.on('f', KEY_ALT_SHIFT, function() { openApp('Finder') });
-Key.on('1', KEY_ALT_SHIFT, function() { openApp('IntelliJ IDEA') });
+Key.on('1', KEY_ALT_SHIFT, function() { openApp('IntelliJ IDEA CE') });
 Key.on('2', KEY_ALT_SHIFT, function() { openApp('CCtalk') });
-
+Key.on('3', KEY_ALT_SHIFT, function() { openApp('QQMusic') })
+Key.on('4', KEY_ALT_SHIFT, function() { openApp('Nozbe') })
+Key.on('5', KEY_ALT_SHIFT, function() { openApp('企业微信') })
 var openApp = function(appName) {
     // 先保存上下文
     storeMouseContext();
@@ -95,8 +98,15 @@ var showUp = function() {
     iconModal.icon = App.focused().icon();
     iconModal.show();
 }
+
+
 //----------------
 // screen switch
 // ---------------
 
-
+Key.on('6', KEY_ALT_SHIFT, function() { screenSwitch() });
+var screenSwitch = function() {
+    var screens = Screen.all();
+    var spaces = screens[1].spaces();
+    spaces[0].active();
+}
