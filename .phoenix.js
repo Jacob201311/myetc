@@ -31,7 +31,7 @@ Key.on('f', KEY_ALT_SHIFT, function() { openApp('Finder') });
 Key.on('1', KEY_ALT_SHIFT, function() { openApp('IntelliJ IDEA CE') });
 Key.on('2', KEY_ALT_SHIFT, function() { openApp('CCtalk') });
 Key.on('3', KEY_ALT_SHIFT, function() { openApp('QQMusic') })
-Key.on('4', KEY_ALT_SHIFT, function() { openApp('Nozbe') })
+Key.on('4', KEY_ALT_SHIFT, function() { openApp('Nozbe 2') })
 Key.on('5', KEY_ALT_SHIFT, function() { openApp('企业微信') })
 var openApp = function(appName) {
     // 先保存上下文
