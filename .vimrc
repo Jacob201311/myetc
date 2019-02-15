@@ -129,8 +129,8 @@ set autoread
 
 " With a map leader it's possible to do extra key combinations
 " like <leader>w saves the current file
-let mapleader = ","
-let g:mapleader = ","
+let mapleader = "-"
+let g:mapleader = "-"
 
 " Fast saving
 nmap <leader>w :w!<cr>
@@ -322,7 +322,7 @@ map <leader>t<leader> :tabnext
 
 " window switch
 let g:choosewin_overlay_enable = 1
-nmap  -  <Plug>(choosewin)
+nmap  '  <Plug>(choosewin)
 
 " Let 'tl' toggle between this and the last accessed tab
 let g:lasttab = 1
