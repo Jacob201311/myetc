@@ -28,6 +28,7 @@ Key.on('t', KEY_ALT_SHIFT, function() { openApp('iTerm') });
 Key.on('k', KEY_ALT_SHIFT, function() { openApp('Kindle') });
 Key.on('m', KEY_ALT_SHIFT, function() { openApp('Mail') });
 Key.on('f', KEY_ALT_SHIFT, function() { openApp('Finder') });
+Key.on('e', KEY_ALT_SHIFT, function() { openApp('Notion') });
 Key.on('1', KEY_ALT_SHIFT, function() { openApp('IntelliJ IDEA CE') });
 Key.on('2', KEY_ALT_SHIFT, function() { openApp('Anki') });
 Key.on('3', KEY_ALT_SHIFT, function() { openApp('QQMusic') })
