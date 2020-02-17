@@ -23,6 +23,7 @@ Key.on('q', KEY_ALT_SHIFT, function() { openApp('QQ') });
 Key.on('w', KEY_ALT_SHIFT, function() { openApp('Wechat') });
 Key.on('c', KEY_ALT_SHIFT, function() { openApp('Google Chrome') });
 Key.on('a', KEY_ALT_SHIFT, function() { openApp('Anki') });
+Key.on('d', KEY_ALT_SHIFT, function() { openApp('Telegram') });
 Key.on('y', KEY_ALT_SHIFT, function() { openApp('yEd') });
 Key.on('t', KEY_ALT_SHIFT, function() { openApp('iTerm') });
 Key.on('k', KEY_ALT_SHIFT, function() { openApp('Kindle') });
