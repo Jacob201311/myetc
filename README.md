@@ -37,3 +37,5 @@ misc config repo
     + 移动到当前窗口中心: <kbd>Alt</kbd><kbd>Shift</kbd><kbd>Space</kbd>
     + 提醒鼠标位置(使用当前app的icon在鼠标位置提醒): <kbd>Alt</kbd><kbd>Shift</kbd><kbd>Z</kbd>
 
+### tmux
+初始化5个 tmux tab, 包含pproject, common, mysql, remote, others 和 self, 每个 tab 切分为 1-4 个 window 
